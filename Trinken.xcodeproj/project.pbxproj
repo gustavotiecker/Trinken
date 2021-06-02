@@ -14,6 +14,7 @@
 		93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93718AFC2661CD7500FD50BB /* LaunchScreen.storyboard */; };
 		93718B092661CD7500FD50BB /* TrinkenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B082661CD7500FD50BB /* TrinkenTests.swift */; };
 		93718B142661CD7500FD50BB /* TrinkenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B132661CD7500FD50BB /* TrinkenUITests.swift */; };
+		93FD82B82667124A004922AC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FD82B72667124A004922AC /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		93718B0F2661CD7500FD50BB /* TrinkenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrinkenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93718B132661CD7500FD50BB /* TrinkenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinkenUITests.swift; sourceTree = "<group>"; };
 		93718B152661CD7500FD50BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93FD82B72667124A004922AC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				93718AF32661CD6B00FD50BB /* SceneDelegate.swift */,
 				93718AF52661CD6B00FD50BB /* ViewController.swift */,
 				93718AFA2661CD7500FD50BB /* Assets.xcassets */,
+				93FD82B72667124A004922AC /* Colors.xcassets */,
 				93718AFC2661CD7500FD50BB /* LaunchScreen.storyboard */,
 				93718AFF2661CD7500FD50BB /* Info.plist */,
 			);
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FD82B82667124A004922AC /* Colors.xcassets in Resources */,
 				93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */,
 				93718AFB2661CD7500FD50BB /* Assets.xcassets in Resources */,
 			);

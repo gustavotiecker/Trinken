@@ -15,6 +15,7 @@
 		93718B092661CD7500FD50BB /* TrinkenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B082661CD7500FD50BB /* TrinkenTests.swift */; };
 		93718B142661CD7500FD50BB /* TrinkenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B132661CD7500FD50BB /* TrinkenUITests.swift */; };
 		93FD82B82667124A004922AC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FD82B72667124A004922AC /* Colors.xcassets */; };
+		93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C2266714B9004922AC /* PrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		93718B132661CD7500FD50BB /* TrinkenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinkenUITests.swift; sourceTree = "<group>"; };
 		93718B152661CD7500FD50BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93FD82B72667124A004922AC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		93FD82C2266714B9004922AC /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		93718AF02661CD6B00FD50BB /* Trinken */ = {
 			isa = PBXGroup;
 			children = (
+				93FD82BF2667147C004922AC /* View */,
 				93718AF12661CD6B00FD50BB /* AppDelegate.swift */,
 				93718AF32661CD6B00FD50BB /* SceneDelegate.swift */,
 				93718AF52661CD6B00FD50BB /* ViewController.swift */,
@@ -126,6 +129,30 @@
 				93718B152661CD7500FD50BB /* Info.plist */,
 			);
 			path = TrinkenUITests;
+			sourceTree = "<group>";
+		};
+		93FD82BF2667147C004922AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93FD82C026671485004922AC /* CustomViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93FD82C026671485004922AC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				93FD82C1266714A0004922AC /* Buttons */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		93FD82C1266714A0004922AC /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				93FD82C2266714B9004922AC /* PrimaryButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +287,7 @@
 			files = (
 				93718AF62661CD6B00FD50BB /* ViewController.swift in Sources */,
 				93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */,
+				93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */,
 				93718AF42661CD6B00FD50BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

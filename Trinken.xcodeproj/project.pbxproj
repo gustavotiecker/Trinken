@@ -17,6 +17,8 @@
 		93FD82B82667124A004922AC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FD82B72667124A004922AC /* Colors.xcassets */; };
 		93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C2266714B9004922AC /* PrimaryButton.swift */; };
 		93FD82C9266717DD004922AC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C8266717DD004922AC /* WelcomeViewController.swift */; };
+		93FD82D026687DB8004922AC /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82CF26687DB8004922AC /* TitleLabel.swift */; };
+		93FD82D826687F9A004922AC /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82D726687F9A004922AC /* BodyLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		93FD82B72667124A004922AC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		93FD82C2266714B9004922AC /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		93FD82C8266717DD004922AC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		93FD82CF26687DB8004922AC /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		93FD82D726687F9A004922AC /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 		93FD82BF2667147C004922AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93FD82CE26687D97004922AC /* Labels */,
 				93FD82C7266717AE004922AC /* Screens */,
 				93FD82C026671485004922AC /* CustomViews */,
 			);
@@ -164,6 +169,15 @@
 				93FD82C8266717DD004922AC /* WelcomeViewController.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		93FD82CE26687D97004922AC /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				93FD82CF26687DB8004922AC /* TitleLabel.swift */,
+				93FD82D726687F9A004922AC /* BodyLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +311,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				93718AF62661CD6B00FD50BB /* ViewController.swift in Sources */,
+				93FD82D826687F9A004922AC /* BodyLabel.swift in Sources */,
 				93FD82C9266717DD004922AC /* WelcomeViewController.swift in Sources */,
 				93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */,
+				93FD82D026687DB8004922AC /* TitleLabel.swift in Sources */,
 				93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */,
 				93718AF42661CD6B00FD50BB /* SceneDelegate.swift in Sources */,
 			);

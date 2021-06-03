@@ -26,7 +26,7 @@ class PrimaryButton: UIButton {
     private func configure() {
         layer.cornerRadius = 20
         setTitleColor(.white, for: .normal)
-        titleLabel?.font = UIFont(name: "Inter-Bold", size: 16)
+        titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

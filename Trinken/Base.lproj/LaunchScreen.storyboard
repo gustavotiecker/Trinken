@@ -17,14 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trinken-logo" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-Bm-ZIy">
-                                <rect key="frame" x="67" y="363" width="280" height="180"/>
+                                <rect key="frame" x="0.0" y="23" width="414" height="860"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="background-color"/>
                         <constraints>
-                            <constraint firstItem="9ES-Bm-ZIy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="G6C-2P-hDV"/>
-                            <constraint firstItem="9ES-Bm-ZIy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cL6-I2-tQ1"/>
+                            <constraint firstItem="9ES-Bm-ZIy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BJ5-VP-Zt6"/>
+                            <constraint firstItem="9ES-Bm-ZIy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pDt-0d-IdQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="9ES-Bm-ZIy" secondAttribute="leading" id="sux-qH-oEf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -34,9 +35,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="trinken-logo" width="280" height="180"/>
+        <image name="trinken-logo" width="1024" height="860"/>
         <namedColor name="background-color">
-            <color red="0.97254901960784312" green="0.96078431372549022" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95294117647058818" green="0.9137254901960784" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

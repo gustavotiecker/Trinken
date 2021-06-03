@@ -140,7 +140,6 @@
 		93FD82BF2667147C004922AC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				93FD82CE26687D97004922AC /* Labels */,
 				93FD82C7266717AE004922AC /* Screens */,
 				93FD82C026671485004922AC /* CustomViews */,
 			);
@@ -150,6 +149,7 @@
 		93FD82C026671485004922AC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				93FD82CE26687D97004922AC /* Labels */,
 				93FD82C1266714A0004922AC /* Buttons */,
 			);
 			path = CustomViews;

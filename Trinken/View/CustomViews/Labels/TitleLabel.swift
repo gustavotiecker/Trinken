@@ -14,19 +14,18 @@ class TitleLabel: UILabel {
         configure()
     }
     
-    convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
-        self.init(frame: .zero)
-        self.textAlignment = textAlignment
-        self.font = UIFont(name: "Inter-Bold", size: fontSize)
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
+        self.init(frame: .zero)
+        self.textAlignment = textAlignment
+        self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+    }
+    
     private func configure() {
-        font = UIFont(name: "Inter-Bold", size: 18)
-        textColor = UIColor(named: "main-text-color")
+        textColor = .label
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.9
         lineBreakMode = .byTruncatingTail

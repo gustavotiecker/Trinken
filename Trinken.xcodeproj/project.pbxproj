@@ -22,6 +22,7 @@
 		93FD82EE26695E34004922AC /* AppTabBarCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82ED26695E34004922AC /* AppTabBarCotroller.swift */; };
 		93FD82F426695EA4004922AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82F326695EA4004922AC /* HomeViewController.swift */; };
 		93FD82FC26695EBD004922AC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82FB26695EBD004922AC /* SearchViewController.swift */; };
+		93FD830726696083004922AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD830626696083004922AC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		93FD82ED26695E34004922AC /* AppTabBarCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarCotroller.swift; sourceTree = "<group>"; };
 		93FD82F326695EA4004922AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		93FD82FB26695EBD004922AC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		93FD830626696083004922AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +115,9 @@
 		93718AF02661CD6B00FD50BB /* Trinken */ = {
 			isa = PBXGroup;
 			children = (
+				93FD830526696066004922AC /* Utilities */,
+				93FD830026695F69004922AC /* Support */,
 				93FD82BF2667147C004922AC /* View */,
-				93718AF12661CD6B00FD50BB /* AppDelegate.swift */,
-				93718AF32661CD6B00FD50BB /* SceneDelegate.swift */,
-				93718AF52661CD6B00FD50BB /* ViewController.swift */,
-				93718AFA2661CD7500FD50BB /* Assets.xcassets */,
-				93FD82B72667124A004922AC /* Colors.xcassets */,
-				93718AFC2661CD7500FD50BB /* LaunchScreen.storyboard */,
 				93718AFF2661CD7500FD50BB /* Info.plist */,
 			);
 			path = Trinken;
@@ -195,6 +193,27 @@
 				93FD82ED26695E34004922AC /* AppTabBarCotroller.swift */,
 			);
 			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		93FD830026695F69004922AC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				93718AF12661CD6B00FD50BB /* AppDelegate.swift */,
+				93718AF32661CD6B00FD50BB /* SceneDelegate.swift */,
+				93718AF52661CD6B00FD50BB /* ViewController.swift */,
+				93718AFA2661CD7500FD50BB /* Assets.xcassets */,
+				93FD82B72667124A004922AC /* Colors.xcassets */,
+				93718AFC2661CD7500FD50BB /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		93FD830526696066004922AC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				93FD830626696083004922AC /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FD82FC26695EBD004922AC /* SearchViewController.swift in Sources */,
+				93FD830726696083004922AC /* Constants.swift in Sources */,
 				93718AF62661CD6B00FD50BB /* ViewController.swift in Sources */,
 				93FD82D826687F9A004922AC /* BodyLabel.swift in Sources */,
 				93FD82C9266717DD004922AC /* WelcomeViewController.swift in Sources */,

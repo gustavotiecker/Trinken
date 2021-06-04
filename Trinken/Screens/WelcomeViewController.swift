@@ -7,6 +7,19 @@
 
 import UIKit
 
+class OnboardingControl {
+    
+    static let shared = OnboardingControl()
+    
+    func isNewUser() -> Bool {
+        return !UserDefaults.standard.bool(forKey: "isNewUser")
+    }
+    
+    func setIsNotNewUser() {
+        UserDefaults.standard.set(true, forKey: "isNewUser")
+    }
+}
+
 class WelcomeViewController: UIViewController {
     
     var imageView = UIImageView()
@@ -22,7 +35,8 @@ class WelcomeViewController: UIViewController {
     }
     
     @objc private func buttonTapped() {
-        print("Button tapped")
+        OnboardingControl.shared.setIsNotNewUser()
+        self.dismiss(animated: true)
     }
     
     private func setButtonAction() {
@@ -30,10 +44,7 @@ class WelcomeViewController: UIViewController {
     }
     
     private func layoutUI() {
-        view.addSubview(imageView)
-        view.addSubview(onboardingTitle)
-        view.addSubview(onboardingDescription)
-        view.addSubview(actionButton)
+        view.addSubviews(imageView, onboardingTitle, onboardingDescription, actionButton)
         
         imageView.image = UIImage(named: "welcome-banner")
         imageView.contentMode = .scaleAspectFill

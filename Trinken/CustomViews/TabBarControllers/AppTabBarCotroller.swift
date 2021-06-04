@@ -18,7 +18,7 @@ class AppTabBarCotroller: UITabBarController {
     func createHomeNavigationController() -> UINavigationController {
         let homeViewController = HomeViewController()
         homeViewController.title = "Home"
-        homeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        homeViewController.tabBarItem = UITabBarItem(title: "", image: SFSymbols.home, tag: 0)
         
         return UINavigationController(rootViewController: homeViewController)
     }
@@ -26,7 +26,7 @@ class AppTabBarCotroller: UITabBarController {
     func createSearchNavigationController() -> UINavigationController {
         let searchViewController = SearchViewController()
         searchViewController.title = "Search"
-        searchViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        searchViewController.tabBarItem = UITabBarItem(title: "", image: SFSymbols.search, tag: 0)
         
         return UINavigationController(rootViewController: searchViewController)
     }

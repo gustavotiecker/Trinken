@@ -16,3 +16,12 @@ enum SFSymbols {
     static let mail = UIImage(systemName: "envelope")
     static let password = UIImage(systemName: "lock")
 }
+
+enum Images {
+    static let welcomeBanner = UIImage(named: "welcome-banner")
+}
+
+enum Colors {
+    static let backgroundColor = UIColor(named: "background-color")
+    static let primaryColor = UIColor(named: "primary-color")
+}

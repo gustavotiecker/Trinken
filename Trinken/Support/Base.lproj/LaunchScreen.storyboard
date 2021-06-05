@@ -21,7 +21,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="background-color"/>
+                        <color key="backgroundColor" name="opening-background-color"/>
                         <constraints>
                             <constraint firstItem="9ES-Bm-ZIy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BJ5-VP-Zt6"/>
                             <constraint firstItem="9ES-Bm-ZIy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pDt-0d-IdQ"/>
@@ -36,8 +36,8 @@
     </scenes>
     <resources>
         <image name="trinken-logo" width="1024" height="860"/>
-        <namedColor name="background-color">
-            <color red="0.95294117647058818" green="0.9137254901960784" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="opening-background-color">
+            <color red="0.95300000905990601" green="0.91399997472763062" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

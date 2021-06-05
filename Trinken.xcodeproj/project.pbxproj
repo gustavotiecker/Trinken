@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8DE266AF0BA004D7107 /* AttributedButton.swift */; };
+		9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8E3266AF77F004D7107 /* SignUpViewController.swift */; };
 		93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF12661CD6B00FD50BB /* AppDelegate.swift */; };
 		93718AF42661CD6B00FD50BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF32661CD6B00FD50BB /* SceneDelegate.swift */; };
 		93718AF62661CD6B00FD50BB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF52661CD6B00FD50BB /* SignInViewController.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		9342B8DE266AF0BA004D7107 /* AttributedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
+		9342B8E3266AF77F004D7107 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		93718AEE2661CD6B00FD50BB /* Trinken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trinken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93718AF12661CD6B00FD50BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93718AF32661CD6B00FD50BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				93FD82C8266717DD004922AC /* WelcomeViewController.swift */,
 				93718AF52661CD6B00FD50BB /* SignInViewController.swift */,
+				9342B8E3266AF77F004D7107 /* SignUpViewController.swift */,
 				93FD82F326695EA4004922AC /* HomeViewController.swift */,
 				93FD82FB26695EBD004922AC /* SearchViewController.swift */,
 			);
@@ -372,6 +375,7 @@
 				93FD82D026687DB8004922AC /* TitleLabel.swift in Sources */,
 				93FD82F426695EA4004922AC /* HomeViewController.swift in Sources */,
 				93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */,
+				9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */,
 				93FD83352669AA62004922AC /* UIView+Ext.swift in Sources */,
 				93FD82EE26695E34004922AC /* AppTabBarCotroller.swift in Sources */,
 				93FD83102669A7EC004922AC /* BasicTextField.swift in Sources */,

@@ -16,10 +16,10 @@ class SignInViewController: UIViewController {
     let welcomeLabel = TitleLabel(textAlignment: .center, fontSize: 20)
     let instructionsLabel = BodyLabel(textAlignment: .center)
     
-    let emailTextField = BasicTextField(placeholder: "Email address", icon: SFSymbols.mail!)
-    let passwordTextField = BasicTextField(placeholder: "Password", icon: SFSymbols.password!)
+    let emailTextField = BasicTextField(placeholder: "Email address", icon: SFSymbols.mail)
+    let passwordTextField = BasicTextField(placeholder: "Password", icon: SFSymbols.password)
     
-    let loginButton = PrimaryButton(title: "Login", backgroundColor: Colors.primaryColor!)
+    let loginButton = PrimaryButton(title: "Login", backgroundColor: Colors.primaryColor)
     let goToSignUpButton = AttributedButton("Don't have an account? ", "Sign Up")
     
     // MARK: - Lifecycle
@@ -48,7 +48,9 @@ class SignInViewController: UIViewController {
     }
     
     @objc private func goToSignUpButtonTapped() {
-        print("Sign up button tapped")
+        let signUpViewController = SignUpViewController()
+        signUpViewController.modalPresentationStyle = .fullScreen
+        present(signUpViewController, animated: true)
     }
     
     // MARK: - Methods

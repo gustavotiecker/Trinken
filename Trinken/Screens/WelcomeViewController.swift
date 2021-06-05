@@ -25,11 +25,11 @@ class WelcomeViewController: UIViewController {
     var imageView = UIImageView()
     var onboardingTitle = TitleLabel(textAlignment: .center, fontSize: 22)
     var onboardingDescription = BodyLabel(textAlignment: .center)
-    var actionButton = PrimaryButton(title: "Get started", backgroundColor: Colors.primaryColor!)
+    var actionButton = PrimaryButton(title: "Get started", backgroundColor: Colors.primaryColor)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.backgroundColor
+        view.backgroundColor = Colors.openingBackgroundColor
         layoutUI()
         setButtonAction()
     }

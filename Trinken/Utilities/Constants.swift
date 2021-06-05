@@ -24,4 +24,5 @@ enum Images {
 enum Colors {
     static let backgroundColor = UIColor(named: "background-color")
     static let primaryColor = UIColor(named: "primary-color")
+    static let mainTextColor = UIColor(named: "main-text-color")
 }

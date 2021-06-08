@@ -83,7 +83,7 @@ class SignUpViewController: UIViewController {
         contentView.addSubviews(titleLabel, formStackView, signUpButton, goToSignInButton)
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 36),
+            titleLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 48),
             titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             
             formStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 36),

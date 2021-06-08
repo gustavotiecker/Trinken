@@ -100,7 +100,7 @@ class SignInViewController: UIViewController {
         contentView.addSubviews(welcomeLabel, instructionsLabel, emailTextField, passwordTextField, loginButton, goToSignUpButton)
         
         NSLayoutConstraint.activate([
-            welcomeLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 36),
+            welcomeLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 48),
             welcomeLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             
             instructionsLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 12),

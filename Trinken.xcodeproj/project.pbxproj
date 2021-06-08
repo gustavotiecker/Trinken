@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DFF9E965C08AC1DF69911BB /* Pods_Trinken_TrinkenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */; };
 		9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8DE266AF0BA004D7107 /* AttributedButton.swift */; };
 		9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8E3266AF77F004D7107 /* SignUpViewController.swift */; };
 		93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF12661CD6B00FD50BB /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 		93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93718AFC2661CD7500FD50BB /* LaunchScreen.storyboard */; };
 		93718B092661CD7500FD50BB /* TrinkenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B082661CD7500FD50BB /* TrinkenTests.swift */; };
 		93718B142661CD7500FD50BB /* TrinkenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B132661CD7500FD50BB /* TrinkenUITests.swift */; };
+		93C96F1C266F036100ADB4AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93C96F1B266F036100ADB4AE /* GoogleService-Info.plist */; };
 		93FD82B82667124A004922AC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FD82B72667124A004922AC /* Colors.xcassets */; };
 		93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C2266714B9004922AC /* PrimaryButton.swift */; };
 		93FD82C9266717DD004922AC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C8266717DD004922AC /* WelcomeViewController.swift */; };
@@ -27,6 +29,8 @@
 		93FD830726696083004922AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD830626696083004922AC /* Constants.swift */; };
 		93FD83102669A7EC004922AC /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD830F2669A7EC004922AC /* BasicTextField.swift */; };
 		93FD83352669AA62004922AC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD83342669AA62004922AC /* UIView+Ext.swift */; };
+		B9CACAB1184BBFC37550576D /* Pods_Trinken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F72D634B82449DEBBCC312A /* Pods_Trinken.framework */; };
+		D3F16FAF0A50020E4DCDDA88 /* Pods_TrinkenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762AB3CD0E427D1DED6636D4 /* Pods_TrinkenTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EF0CCFA3BE93DA79918420 /* Pods-Trinken-TrinkenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trinken-TrinkenUITests.debug.xcconfig"; path = "Target Support Files/Pods-Trinken-TrinkenUITests/Pods-Trinken-TrinkenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trinken_TrinkenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F72D634B82449DEBBCC312A /* Pods_Trinken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trinken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762AB3CD0E427D1DED6636D4 /* Pods_TrinkenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrinkenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9342B8DE266AF0BA004D7107 /* AttributedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
 		9342B8E3266AF77F004D7107 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		93718AEE2661CD6B00FD50BB /* Trinken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trinken.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +70,7 @@
 		93718B0F2661CD7500FD50BB /* TrinkenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrinkenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93718B132661CD7500FD50BB /* TrinkenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinkenUITests.swift; sourceTree = "<group>"; };
 		93718B152661CD7500FD50BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C96F1B266F036100ADB4AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93FD82B72667124A004922AC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		93FD82C2266714B9004922AC /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		93FD82C8266717DD004922AC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +82,11 @@
 		93FD830626696083004922AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		93FD830F2669A7EC004922AC /* BasicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextField.swift; sourceTree = "<group>"; };
 		93FD83342669AA62004922AC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		985E644E5C896E34D47FFE99 /* Pods-Trinken-TrinkenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trinken-TrinkenUITests.release.xcconfig"; path = "Target Support Files/Pods-Trinken-TrinkenUITests/Pods-Trinken-TrinkenUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C539BC12DE032C4C472CF91 /* Pods-Trinken.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trinken.release.xcconfig"; path = "Target Support Files/Pods-Trinken/Pods-Trinken.release.xcconfig"; sourceTree = "<group>"; };
+		C089BC76C8E7ACCC68DD8AF0 /* Pods-TrinkenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrinkenTests.debug.xcconfig"; path = "Target Support Files/Pods-TrinkenTests/Pods-TrinkenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E207ACC0CCFA55DBAA918E85 /* Pods-TrinkenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrinkenTests.release.xcconfig"; path = "Target Support Files/Pods-TrinkenTests/Pods-TrinkenTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDF77F3121FF613DE3CD5AE5 /* Pods-Trinken.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trinken.debug.xcconfig"; path = "Target Support Files/Pods-Trinken/Pods-Trinken.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CACAB1184BBFC37550576D /* Pods_Trinken.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F16FAF0A50020E4DCDDA88 /* Pods_TrinkenTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFF9E965C08AC1DF69911BB /* Pods_Trinken_TrinkenUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +124,8 @@
 				93718B072661CD7500FD50BB /* TrinkenTests */,
 				93718B122661CD7500FD50BB /* TrinkenUITests */,
 				93718AEF2661CD6B00FD50BB /* Products */,
+				B267A45381A56E9F222FDB0B /* Pods */,
+				F376AE41C302D76F1DCECFCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +148,7 @@
 				93FD82C7266717AE004922AC /* Screens */,
 				93FD82C026671485004922AC /* CustomViews */,
 				93718AFF2661CD7500FD50BB /* Info.plist */,
+				93C96F1B266F036100ADB4AE /* GoogleService-Info.plist */,
 			);
 			path = Trinken;
 			sourceTree = "<group>";
@@ -236,6 +256,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B267A45381A56E9F222FDB0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDF77F3121FF613DE3CD5AE5 /* Pods-Trinken.debug.xcconfig */,
+				9C539BC12DE032C4C472CF91 /* Pods-Trinken.release.xcconfig */,
+				04EF0CCFA3BE93DA79918420 /* Pods-Trinken-TrinkenUITests.debug.xcconfig */,
+				985E644E5C896E34D47FFE99 /* Pods-Trinken-TrinkenUITests.release.xcconfig */,
+				C089BC76C8E7ACCC68DD8AF0 /* Pods-TrinkenTests.debug.xcconfig */,
+				E207ACC0CCFA55DBAA918E85 /* Pods-TrinkenTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F376AE41C302D76F1DCECFCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F72D634B82449DEBBCC312A /* Pods_Trinken.framework */,
+				351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */,
+				762AB3CD0E427D1DED6636D4 /* Pods_TrinkenTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93718B182661CD7500FD50BB /* Build configuration list for PBXNativeTarget "Trinken" */;
 			buildPhases = (
+				0AC01E16BFAAE8EB88615B45 /* [CP] Check Pods Manifest.lock */,
 				93718AEA2661CD6B00FD50BB /* Sources */,
 				93718AEB2661CD6B00FD50BB /* Frameworks */,
 				93718AEC2661CD6B00FD50BB /* Resources */,
+				79B61ED72DED0B0A5AA9C819 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93718B1B2661CD7500FD50BB /* Build configuration list for PBXNativeTarget "TrinkenTests" */;
 			buildPhases = (
+				EB3880805ED982509F7C6A4C /* [CP] Check Pods Manifest.lock */,
 				93718B002661CD7500FD50BB /* Sources */,
 				93718B012661CD7500FD50BB /* Frameworks */,
 				93718B022661CD7500FD50BB /* Resources */,
@@ -278,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93718B1E2661CD7500FD50BB /* Build configuration list for PBXNativeTarget "TrinkenUITests" */;
 			buildPhases = (
+				798CAA8BA76DA619675E427B /* [CP] Check Pods Manifest.lock */,
 				93718B0B2661CD7500FD50BB /* Sources */,
 				93718B0C2661CD7500FD50BB /* Frameworks */,
 				93718B0D2661CD7500FD50BB /* Resources */,
+				7BECFFDAAC24B69F66576159 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FD82B82667124A004922AC /* Colors.xcassets in Resources */,
+				93C96F1C266F036100ADB4AE /* GoogleService-Info.plist in Resources */,
 				93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */,
 				93718AFB2661CD7500FD50BB /* Assets.xcassets in Resources */,
 			);
@@ -360,6 +410,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC01E16BFAAE8EB88615B45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trinken-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		798CAA8BA76DA619675E427B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trinken-TrinkenUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79B61ED72DED0B0A5AA9C819 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trinken/Pods-Trinken-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trinken/Pods-Trinken-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trinken/Pods-Trinken-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BECFFDAAC24B69F66576159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trinken-TrinkenUITests/Pods-Trinken-TrinkenUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trinken-TrinkenUITests/Pods-Trinken-TrinkenUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trinken-TrinkenUITests/Pods-Trinken-TrinkenUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3880805ED982509F7C6A4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrinkenTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93718AEA2661CD6B00FD50BB /* Sources */ = {
@@ -545,6 +698,7 @@
 		};
 		93718B192661CD7500FD50BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF77F3121FF613DE3CD5AE5 /* Pods-Trinken.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -564,6 +718,7 @@
 		};
 		93718B1A2661CD7500FD50BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C539BC12DE032C4C472CF91 /* Pods-Trinken.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -583,6 +738,7 @@
 		};
 		93718B1C2661CD7500FD50BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C089BC76C8E7ACCC68DD8AF0 /* Pods-TrinkenTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -605,6 +761,7 @@
 		};
 		93718B1D2661CD7500FD50BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E207ACC0CCFA55DBAA918E85 /* Pods-TrinkenTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -627,6 +784,7 @@
 		};
 		93718B1F2661CD7500FD50BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04EF0CCFA3BE93DA79918420 /* Pods-Trinken-TrinkenUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -647,6 +805,7 @@
 		};
 		93718B202661CD7500FD50BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985E644E5C896E34D47FFE99 /* Pods-Trinken-TrinkenUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

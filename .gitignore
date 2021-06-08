@@ -2,7 +2,7 @@
 # Edit at https://www.gitignore.io/?templates=xcode,macos,swift,carthage,cocoapods,objective-c,swiftpackagemanager
 
 ## Firebase
-TwitterClone/GoogleService-Info.plist
+Trinken/GoogleService-Info.plist
 
 ### Carthage ###
 # Carthage

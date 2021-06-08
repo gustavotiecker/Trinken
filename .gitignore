@@ -1,6 +1,9 @@
 # Created by https://www.gitignore.io/api/xcode,macos,swift,carthage,cocoapods,objective-c,swiftpackagemanager
 # Edit at https://www.gitignore.io/?templates=xcode,macos,swift,carthage,cocoapods,objective-c,swiftpackagemanager
 
+## Firebase
+TwitterClone/GoogleService-Info.plist
+
 ### Carthage ###
 # Carthage
 #

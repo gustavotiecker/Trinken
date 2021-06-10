@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2DFF9E965C08AC1DF69911BB /* Pods_Trinken_TrinkenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */; };
+		9326159F2671B65D000511AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9326159E2671B65D000511AE /* GoogleService-Info.plist */; };
 		9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8DE266AF0BA004D7107 /* AttributedButton.swift */; };
 		9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8E3266AF77F004D7107 /* SignUpViewController.swift */; };
 		93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF12661CD6B00FD50BB /* AppDelegate.swift */; };
@@ -17,7 +18,6 @@
 		93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93718AFC2661CD7500FD50BB /* LaunchScreen.storyboard */; };
 		93718B092661CD7500FD50BB /* TrinkenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B082661CD7500FD50BB /* TrinkenTests.swift */; };
 		93718B142661CD7500FD50BB /* TrinkenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B132661CD7500FD50BB /* TrinkenUITests.swift */; };
-		93C96F1C266F036100ADB4AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93C96F1B266F036100ADB4AE /* GoogleService-Info.plist */; };
 		93FD82B82667124A004922AC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FD82B72667124A004922AC /* Colors.xcassets */; };
 		93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C2266714B9004922AC /* PrimaryButton.swift */; };
 		93FD82C9266717DD004922AC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C8266717DD004922AC /* WelcomeViewController.swift */; };
@@ -55,6 +55,7 @@
 		351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trinken_TrinkenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F72D634B82449DEBBCC312A /* Pods_Trinken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trinken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		762AB3CD0E427D1DED6636D4 /* Pods_TrinkenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrinkenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9326159E2671B65D000511AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9342B8DE266AF0BA004D7107 /* AttributedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
 		9342B8E3266AF77F004D7107 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		93718AEE2661CD6B00FD50BB /* Trinken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trinken.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +71,6 @@
 		93718B0F2661CD7500FD50BB /* TrinkenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrinkenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93718B132661CD7500FD50BB /* TrinkenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinkenUITests.swift; sourceTree = "<group>"; };
 		93718B152661CD7500FD50BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93C96F1B266F036100ADB4AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93FD82B72667124A004922AC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		93FD82C2266714B9004922AC /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		93FD82C8266717DD004922AC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				93FD82C7266717AE004922AC /* Screens */,
 				93FD82C026671485004922AC /* CustomViews */,
 				93718AFF2661CD7500FD50BB /* Info.plist */,
-				93C96F1B266F036100ADB4AE /* GoogleService-Info.plist */,
+				9326159E2671B65D000511AE /* GoogleService-Info.plist */,
 			);
 			path = Trinken;
 			sourceTree = "<group>";
@@ -266,7 +266,6 @@
 				C089BC76C8E7ACCC68DD8AF0 /* Pods-TrinkenTests.debug.xcconfig */,
 				E207ACC0CCFA55DBAA918E85 /* Pods-TrinkenTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -389,7 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FD82B82667124A004922AC /* Colors.xcassets in Resources */,
-				93C96F1C266F036100ADB4AE /* GoogleService-Info.plist in Resources */,
+				9326159F2671B65D000511AE /* GoogleService-Info.plist in Resources */,
 				93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */,
 				93718AFB2661CD7500FD50BB /* Assets.xcassets in Resources */,
 			);

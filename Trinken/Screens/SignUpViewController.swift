@@ -35,8 +35,14 @@ class SignUpViewController: UIViewController {
     
     // MARK: - Actions
     @objc private func signUpButtonTapped() {
+        guard let fullName = fullNameTextField.text else { return }
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
+        guard let passwordConfirmation = passwordConfirmationTextField.text else { return }
+        
+        if password != passwordConfirmation {
+            print("Passwords must match")
+        }
         
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {

@@ -59,6 +59,7 @@ class SignUpViewController: UIViewController {
         configureScrollView()
         configureStackView()
         configureLabels()
+        configureTextFields()
         configureButtons()
     }
     
@@ -85,6 +86,11 @@ class SignUpViewController: UIViewController {
     
     private func configureLabels() {
         titleLabel.text = "Create your account"
+    }
+    
+    private func configureTextFields() {
+        emailTextField.keyboardType = .emailAddress
+        passwordTextField.isSecureTextEntry = true
     }
     
     private func configureButtons() {

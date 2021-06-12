@@ -17,18 +17,18 @@ class SignUpViewController: UIViewController {
     
     let titleLabel = TitleLabel(textAlignment: .center, fontSize: 20)
     
-    let fullNameTextField = BasicTextField(placeholder: "Full name", icon: SFSymbols.user)
-    let emailTextField = BasicTextField(placeholder: "Email address", icon: SFSymbols.mail)
-    let passwordTextField = BasicTextField(placeholder: "Password", icon: SFSymbols.password)
-    let passwordConfirmationTextField = BasicTextField(placeholder: "Confirm password", icon: SFSymbols.password)
+    let fullNameTextField = BasicTextField(placeholder: "Full name", icon: SFSymbols.USER)
+    let emailTextField = BasicTextField(placeholder: "Email address", icon: SFSymbols.MAIL)
+    let passwordTextField = BasicTextField(placeholder: "Password", icon: SFSymbols.LOCK)
+    let passwordConfirmationTextField = BasicTextField(placeholder: "Confirm password", icon: SFSymbols.LOCK)
     
-    let signUpButton = PrimaryButton(title: "Sign Up", backgroundColor: Colors.primaryColor)
+    let signUpButton = PrimaryButton(title: "Sign Up", backgroundColor: Colors.PRIMARY_COLOR)
     let goToSignInButton = AttributedButton("Already have an account? ", "Sign In")
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.backgroundColor
+        view.backgroundColor = Colors.BACKGROUND_COLOR
         configure()
         layoutUI()
     }
@@ -49,10 +49,15 @@ class SignUpViewController: UIViewController {
                 print(error.localizedDescription)
             }
             
-            print("Successfully registered user")
-            let appTabBarController = AppTabBarCotroller()
-            appTabBarController.modalPresentationStyle = .fullScreen
-            self.present(appTabBarController, animated: true)
+            guard let uid = result?.user.uid else { return }
+            
+            let values = ["email" : email, "fullname" : fullName]
+            
+            let dbReference = Database.database().reference().child("users").child(uid)
+            
+            dbReference.updateChildValues(values) { error, dbReference in
+                print("Successfully updated user information")
+            }
         }
     }
     

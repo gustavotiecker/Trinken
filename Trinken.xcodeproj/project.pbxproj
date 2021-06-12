@@ -11,6 +11,7 @@
 		9326159F2671B65D000511AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9326159E2671B65D000511AE /* GoogleService-Info.plist */; };
 		9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8DE266AF0BA004D7107 /* AttributedButton.swift */; };
 		9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8E3266AF77F004D7107 /* SignUpViewController.swift */; };
+		936F259126742F26001A3803 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F259026742F26001A3803 /* FirebaseConstants.swift */; };
 		93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF12661CD6B00FD50BB /* AppDelegate.swift */; };
 		93718AF42661CD6B00FD50BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF32661CD6B00FD50BB /* SceneDelegate.swift */; };
 		93718AF62661CD6B00FD50BB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF52661CD6B00FD50BB /* SignInViewController.swift */; };
@@ -58,6 +59,7 @@
 		9326159E2671B65D000511AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9342B8DE266AF0BA004D7107 /* AttributedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
 		9342B8E3266AF77F004D7107 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		936F259026742F26001A3803 /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
 		93718AEE2661CD6B00FD50BB /* Trinken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trinken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93718AF12661CD6B00FD50BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93718AF32661CD6B00FD50BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				93FD830626696083004922AC /* Constants.swift */,
+				936F259026742F26001A3803 /* FirebaseConstants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936F259126742F26001A3803 /* FirebaseConstants.swift in Sources */,
 				93FD82FC26695EBD004922AC /* SearchViewController.swift in Sources */,
 				93FD830726696083004922AC /* Constants.swift in Sources */,
 				93718AF62661CD6B00FD50BB /* SignInViewController.swift in Sources */,

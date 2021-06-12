@@ -8,23 +8,23 @@
 import UIKit
 
 enum SFSymbols {
-    static let home = UIImage(systemName: "house")!
-    static let search = UIImage(systemName: "magnifyingglass")!
-    static let favorites = UIImage(systemName: "star")!
-    static let configurations = UIImage(systemName: "gear")!
+    static let HOME = UIImage(systemName: "house")!
+    static let SEARCH = UIImage(systemName: "magnifyingglass")!
+    static let FAVORITES = UIImage(systemName: "star")!
+    static let CONFIGURATION = UIImage(systemName: "gear")!
     
-    static let mail = UIImage(systemName: "envelope")!
-    static let password = UIImage(systemName: "lock")!
-    static let user = UIImage(systemName: "person")!
+    static let MAIL = UIImage(systemName: "envelope")!
+    static let LOCK = UIImage(systemName: "lock")!
+    static let USER = UIImage(systemName: "person")!
 }
 
 enum Images {
-    static let welcomeBanner = UIImage(named: "welcome-banner")!
+    static let WELCOME_BANNER = UIImage(named: "welcome-banner")!
 }
 
 enum Colors {
-    static let openingBackgroundColor = UIColor(named: "opening-background-color")!
-    static let backgroundColor = UIColor(named: "background-color")!
-    static let primaryColor = UIColor(named: "primary-color")!
-    static let mainTextColor = UIColor(named: "main-text-color")!
+    static let OPENING_BRACKGROUND_COLOR = UIColor(named: "opening-background-color")!
+    static let BACKGROUND_COLOR = UIColor(named: "background-color")!
+    static let PRIMARY_COLOR = UIColor(named: "primary-color")!
+    static let MAIN_TEXT_COLOR = UIColor(named: "main-text-color")!
 }

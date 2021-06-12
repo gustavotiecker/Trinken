@@ -25,11 +25,11 @@ class WelcomeViewController: UIViewController {
     var imageView = UIImageView()
     var onboardingTitle = TitleLabel(textAlignment: .center, fontSize: 22)
     var onboardingDescription = BodyLabel(textAlignment: .center)
-    var actionButton = PrimaryButton(title: "Get started", backgroundColor: Colors.primaryColor)
+    var actionButton = PrimaryButton(title: "Get started", backgroundColor: Colors.PRIMARY_COLOR)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.openingBackgroundColor
+        view.backgroundColor = Colors.OPENING_BRACKGROUND_COLOR
         layoutUI()
         setButtonAction()
     }
@@ -46,7 +46,7 @@ class WelcomeViewController: UIViewController {
     private func layoutUI() {
         view.addSubviews(imageView, onboardingTitle, onboardingDescription, actionButton)
         
-        imageView.image = Images.welcomeBanner
+        imageView.image = Images.WELCOME_BANNER
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         

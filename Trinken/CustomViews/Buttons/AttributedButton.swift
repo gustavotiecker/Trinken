@@ -22,13 +22,13 @@ class AttributedButton: UIButton {
         self.init(frame: .zero)
         let attributedTitle = NSMutableAttributedString(
             string: firstPart,
-            attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16, weight: .regular), NSAttributedString.Key.foregroundColor: Colors.mainTextColor as Any]
+            attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16, weight: .regular), NSAttributedString.Key.foregroundColor: Colors.MAIN_TEXT_COLOR as Any]
         )
         
         attributedTitle.append(
             NSAttributedString(
                 string: secondPart,
-                attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16, weight: .bold), NSAttributedString.Key.foregroundColor: Colors.primaryColor as Any]
+                attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16, weight: .bold), NSAttributedString.Key.foregroundColor: Colors.PRIMARY_COLOR as Any]
             )
         )
         

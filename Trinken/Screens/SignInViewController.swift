@@ -16,16 +16,16 @@ class SignInViewController: UIViewController {
     let welcomeLabel = TitleLabel(textAlignment: .center, fontSize: 20)
     let instructionsLabel = BodyLabel(textAlignment: .center)
     
-    let emailTextField = BasicTextField(placeholder: "Email address", icon: SFSymbols.mail)
-    let passwordTextField = BasicTextField(placeholder: "Password", icon: SFSymbols.password)
+    let emailTextField = BasicTextField(placeholder: "Email address", icon: SFSymbols.MAIL)
+    let passwordTextField = BasicTextField(placeholder: "Password", icon: SFSymbols.LOCK)
     
-    let loginButton = PrimaryButton(title: "Login", backgroundColor: Colors.primaryColor)
+    let loginButton = PrimaryButton(title: "Login", backgroundColor: Colors.PRIMARY_COLOR)
     let goToSignUpButton = AttributedButton("Don't have an account? ", "Sign Up")
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.backgroundColor
+        view.backgroundColor = Colors.BACKGROUND_COLOR
     }
     
     override func viewDidAppear(_ animated: Bool) {

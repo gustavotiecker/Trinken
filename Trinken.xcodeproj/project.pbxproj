@@ -12,6 +12,7 @@
 		9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8DE266AF0BA004D7107 /* AttributedButton.swift */; };
 		9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8E3266AF77F004D7107 /* SignUpViewController.swift */; };
 		936F259126742F26001A3803 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F259026742F26001A3803 /* FirebaseConstants.swift */; };
+		936F25942674330E001A3803 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F25932674330E001A3803 /* AuthService.swift */; };
 		93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF12661CD6B00FD50BB /* AppDelegate.swift */; };
 		93718AF42661CD6B00FD50BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF32661CD6B00FD50BB /* SceneDelegate.swift */; };
 		93718AF62661CD6B00FD50BB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF52661CD6B00FD50BB /* SignInViewController.swift */; };
@@ -60,6 +61,7 @@
 		9342B8DE266AF0BA004D7107 /* AttributedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
 		9342B8E3266AF77F004D7107 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		936F259026742F26001A3803 /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
+		936F25932674330E001A3803 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		93718AEE2661CD6B00FD50BB /* Trinken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trinken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93718AF12661CD6B00FD50BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93718AF32661CD6B00FD50BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		936F259226743300001A3803 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				936F25932674330E001A3803 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		93718AE52661CD6B00FD50BB = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		93718AF02661CD6B00FD50BB /* Trinken */ = {
 			isa = PBXGroup;
 			children = (
+				936F259226743300001A3803 /* Services */,
 				93FD83282669AA26004922AC /* Extensions */,
 				93FD830526696066004922AC /* Utilities */,
 				93FD830026695F69004922AC /* Support */,
@@ -535,6 +546,7 @@
 				93FD83352669AA62004922AC /* UIView+Ext.swift in Sources */,
 				93FD82EE26695E34004922AC /* AppTabBarCotroller.swift in Sources */,
 				93FD83102669A7EC004922AC /* BasicTextField.swift in Sources */,
+				936F25942674330E001A3803 /* AuthService.swift in Sources */,
 				93718AF42661CD6B00FD50BB /* SceneDelegate.swift in Sources */,
 				9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */,
 			);

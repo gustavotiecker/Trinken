@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 
 class SignUpViewController: UIViewController {
     
@@ -40,24 +39,13 @@ class SignUpViewController: UIViewController {
         guard let password = passwordTextField.text else { return }
         guard let passwordConfirmation = passwordConfirmationTextField.text else { return }
         
-        if password != passwordConfirmation {
+        if password == passwordConfirmation {
+            let userCredentials = AuthCredentials(fullName: fullName, email: email, password: password)
+            AuthService.shared.registerUser(credentials: userCredentials) { error, dbReference in
+                print("Sign Up Successful")
+            }
+        } else {
             print("Passwords must match")
-        }
-        
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            
-            guard let uid = result?.user.uid else { return }
-            
-            let values = ["email" : email, "fullname" : fullName]
-            
-            let dbReference = Database.database().reference().child("users").child(uid)
-            
-            dbReference.updateChildValues(values) { error, dbReference in
-                print("Successfully updated user information")
-            }
         }
     }
     

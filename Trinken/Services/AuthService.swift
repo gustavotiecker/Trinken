@@ -17,6 +17,14 @@ struct AuthCredentials {
 struct AuthService {
     static let shared = AuthService()
     
+    var hasUserLoggedIn: Bool {
+        if Auth.auth().currentUser == nil {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     func registerUser(credentials: AuthCredentials, completion: @escaping (Error?, DatabaseReference) -> Void) {
         Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { result, error in
             if let error = error {

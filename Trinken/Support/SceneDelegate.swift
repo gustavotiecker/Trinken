@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        if AuthService.shared.hasUserLoggedIn {
+        if AuthService.shared.hasUserSignedIn {
             window?.rootViewController = AppTabBarCotroller()
             window?.makeKeyAndVisible()
         } else {

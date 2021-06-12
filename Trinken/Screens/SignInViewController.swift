@@ -42,9 +42,17 @@ class SignInViewController: UIViewController {
     
     // MARK: - Actions
     @objc private func loginButtonTapped() {
-        let appTabBarController = AppTabBarCotroller()
-        appTabBarController.modalPresentationStyle = .fullScreen
-        present(appTabBarController, animated: true)
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        AuthService.shared.signUserIn(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            print("Successful log in")
+        }
     }
     
     @objc private func goToSignUpButtonTapped() {

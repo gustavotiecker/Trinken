@@ -17,7 +17,7 @@ struct AuthCredentials {
 struct AuthService {
     static let shared = AuthService()
     
-    var hasUserLoggedIn: Bool {
+    var hasUserSignedIn: Bool {
         if Auth.auth().currentUser == nil {
             return false
         } else {
@@ -38,5 +38,9 @@ struct AuthService {
             
             DB.USERS_REF.child(uid).updateChildValues(values, withCompletionBlock: completion)
         }
+    }
+    
+    func signUserIn(withEmail email: String, password: String, completion: AuthDataResultCallback?) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
     }
 }

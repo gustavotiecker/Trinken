@@ -51,14 +51,14 @@ class SignInViewController: UIViewController {
                 return
             }
             
-            print("Successful log in")
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
     @objc private func goToSignUpButtonTapped() {
         let signUpViewController = SignUpViewController()
         signUpViewController.modalPresentationStyle = .fullScreen
-        present(signUpViewController, animated: true)
+        navigationController?.pushViewController(SignUpViewController(), animated: true)
     }
     
     // MARK: - Methods
@@ -108,7 +108,7 @@ class SignInViewController: UIViewController {
         contentView.addSubviews(welcomeLabel, instructionsLabel, emailTextField, passwordTextField, loginButton, goToSignUpButton)
         
         NSLayoutConstraint.activate([
-            welcomeLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 48),
+            welcomeLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 88),
             welcomeLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             
             instructionsLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 12),

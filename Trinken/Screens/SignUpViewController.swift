@@ -42,7 +42,7 @@ class SignUpViewController: UIViewController {
         if password == passwordConfirmation {
             let userCredentials = AuthCredentials(fullName: fullName, email: email, password: password)
             AuthService.shared.registerUser(credentials: userCredentials) { error, dbReference in
-                print("Sign Up Successful")
+                self.dismiss(animated: true, completion: nil)
             }
         } else {
             print("Passwords must match")
@@ -50,7 +50,7 @@ class SignUpViewController: UIViewController {
     }
     
     @objc private func goToSignInButtonTapped() {
-        self.dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Methods

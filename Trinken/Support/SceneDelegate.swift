@@ -17,14 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        
-        if AuthService.shared.hasUserSignedIn {
-            window?.rootViewController = AppTabBarCotroller()
-            window?.makeKeyAndVisible()
-        } else {
-            window?.rootViewController = SignInViewController()
-            window?.makeKeyAndVisible()
-        }
+        window?.rootViewController = AppTabBarController()
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

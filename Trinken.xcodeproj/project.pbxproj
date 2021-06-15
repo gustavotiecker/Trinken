@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2DFF9E965C08AC1DF69911BB /* Pods_Trinken_TrinkenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */; };
-		9326159F2671B65D000511AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9326159E2671B65D000511AE /* GoogleService-Info.plist */; };
 		9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8DE266AF0BA004D7107 /* AttributedButton.swift */; };
 		9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8E3266AF77F004D7107 /* SignUpViewController.swift */; };
+		935F39B726783F7C002D288B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 935F39B626783F7C002D288B /* GoogleService-Info.plist */; };
 		936F259126742F26001A3803 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F259026742F26001A3803 /* FirebaseConstants.swift */; };
 		936F25942674330E001A3803 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F25932674330E001A3803 /* AuthService.swift */; };
 		93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718AF12661CD6B00FD50BB /* AppDelegate.swift */; };
@@ -25,7 +25,7 @@
 		93FD82C9266717DD004922AC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C8266717DD004922AC /* WelcomeViewController.swift */; };
 		93FD82D026687DB8004922AC /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82CF26687DB8004922AC /* TitleLabel.swift */; };
 		93FD82D826687F9A004922AC /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82D726687F9A004922AC /* BodyLabel.swift */; };
-		93FD82EE26695E34004922AC /* AppTabBarCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82ED26695E34004922AC /* AppTabBarCotroller.swift */; };
+		93FD82EE26695E34004922AC /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82ED26695E34004922AC /* AppTabBarController.swift */; };
 		93FD82F426695EA4004922AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82F326695EA4004922AC /* HomeViewController.swift */; };
 		93FD82FC26695EBD004922AC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82FB26695EBD004922AC /* SearchViewController.swift */; };
 		93FD830726696083004922AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD830626696083004922AC /* Constants.swift */; };
@@ -57,9 +57,9 @@
 		351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trinken_TrinkenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F72D634B82449DEBBCC312A /* Pods_Trinken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trinken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		762AB3CD0E427D1DED6636D4 /* Pods_TrinkenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrinkenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9326159E2671B65D000511AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9342B8DE266AF0BA004D7107 /* AttributedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
 		9342B8E3266AF77F004D7107 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		935F39B626783F7C002D288B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		936F259026742F26001A3803 /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
 		936F25932674330E001A3803 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		93718AEE2661CD6B00FD50BB /* Trinken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trinken.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +80,7 @@
 		93FD82C8266717DD004922AC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		93FD82CF26687DB8004922AC /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		93FD82D726687F9A004922AC /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
-		93FD82ED26695E34004922AC /* AppTabBarCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarCotroller.swift; sourceTree = "<group>"; };
+		93FD82ED26695E34004922AC /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		93FD82F326695EA4004922AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		93FD82FB26695EBD004922AC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		93FD830626696083004922AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				93FD82C7266717AE004922AC /* Screens */,
 				93FD82C026671485004922AC /* CustomViews */,
 				93718AFF2661CD7500FD50BB /* Info.plist */,
-				9326159E2671B65D000511AE /* GoogleService-Info.plist */,
+				935F39B626783F7C002D288B /* GoogleService-Info.plist */,
 			);
 			path = Trinken;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 		93FD82EC26695E01004922AC /* TabBarControllers */ = {
 			isa = PBXGroup;
 			children = (
-				93FD82ED26695E34004922AC /* AppTabBarCotroller.swift */,
+				93FD82ED26695E34004922AC /* AppTabBarController.swift */,
 			);
 			path = TabBarControllers;
 			sourceTree = "<group>";
@@ -402,7 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FD82B82667124A004922AC /* Colors.xcassets in Resources */,
-				9326159F2671B65D000511AE /* GoogleService-Info.plist in Resources */,
+				935F39B726783F7C002D288B /* GoogleService-Info.plist in Resources */,
 				93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */,
 				93718AFB2661CD7500FD50BB /* Assets.xcassets in Resources */,
 			);
@@ -544,7 +544,7 @@
 				93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */,
 				9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */,
 				93FD83352669AA62004922AC /* UIView+Ext.swift in Sources */,
-				93FD82EE26695E34004922AC /* AppTabBarCotroller.swift in Sources */,
+				93FD82EE26695E34004922AC /* AppTabBarController.swift in Sources */,
 				93FD83102669A7EC004922AC /* BasicTextField.swift in Sources */,
 				936F25942674330E001A3803 /* AuthService.swift in Sources */,
 				93718AF42661CD6B00FD50BB /* SceneDelegate.swift in Sources */,

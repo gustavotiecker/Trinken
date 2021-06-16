@@ -158,7 +158,7 @@
 				93FD83282669AA26004922AC /* Extensions */,
 				93FD830526696066004922AC /* Utilities */,
 				93FD830026695F69004922AC /* Support */,
-				93FD82C7266717AE004922AC /* Screens */,
+				93FD82C7266717AE004922AC /* Scenes */,
 				93FD82C026671485004922AC /* CustomViews */,
 				93718AFF2661CD7500FD50BB /* Info.plist */,
 				935F39B626783F7C002D288B /* GoogleService-Info.plist */,
@@ -204,7 +204,7 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		93FD82C7266717AE004922AC /* Screens */ = {
+		93FD82C7266717AE004922AC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				93FD82C8266717DD004922AC /* WelcomeViewController.swift */,
@@ -213,7 +213,7 @@
 				93FD82F326695EA4004922AC /* HomeViewController.swift */,
 				93FD82FB26695EBD004922AC /* SearchViewController.swift */,
 			);
-			path = Screens;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		93FD82CE26687D97004922AC /* Labels */ = {

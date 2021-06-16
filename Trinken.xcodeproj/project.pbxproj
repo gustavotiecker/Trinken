@@ -20,6 +20,8 @@
 		93718AFE2661CD7500FD50BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93718AFC2661CD7500FD50BB /* LaunchScreen.storyboard */; };
 		93718B092661CD7500FD50BB /* TrinkenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B082661CD7500FD50BB /* TrinkenTests.swift */; };
 		93718B142661CD7500FD50BB /* TrinkenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B132661CD7500FD50BB /* TrinkenUITests.swift */; };
+		93D2068D2679916700EA8532 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D2068C2679916700EA8532 /* FavoritesViewController.swift */; };
+		93D2068F2679918B00EA8532 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D2068E2679918B00EA8532 /* ProfileViewController.swift */; };
 		93FD82B82667124A004922AC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FD82B72667124A004922AC /* Colors.xcassets */; };
 		93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C2266714B9004922AC /* PrimaryButton.swift */; };
 		93FD82C9266717DD004922AC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD82C8266717DD004922AC /* WelcomeViewController.swift */; };
@@ -75,6 +77,8 @@
 		93718B0F2661CD7500FD50BB /* TrinkenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrinkenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93718B132661CD7500FD50BB /* TrinkenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinkenUITests.swift; sourceTree = "<group>"; };
 		93718B152661CD7500FD50BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D2068C2679916700EA8532 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		93D2068E2679918B00EA8532 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		93FD82B72667124A004922AC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		93FD82C2266714B9004922AC /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		93FD82C8266717DD004922AC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +188,62 @@
 			path = TrinkenUITests;
 			sourceTree = "<group>";
 		};
+		93D20685267990BF00EA8532 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				93FD82C8266717DD004922AC /* WelcomeViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		93D20686267990DE00EA8532 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				93718AF52661CD6B00FD50BB /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		93D20687267990F000EA8532 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9342B8E3266AF77F004D7107 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		93D20688267990FC00EA8532 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93FD82F326695EA4004922AC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		93D206892679910600EA8532 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				93FD82FB26695EBD004922AC /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		93D2068A2679913800EA8532 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				93D2068C2679916700EA8532 /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		93D2068B2679913E00EA8532 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				93D2068E2679918B00EA8532 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		93FD82C026671485004922AC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,11 +267,13 @@
 		93FD82C7266717AE004922AC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				93FD82C8266717DD004922AC /* WelcomeViewController.swift */,
-				93718AF52661CD6B00FD50BB /* SignInViewController.swift */,
-				9342B8E3266AF77F004D7107 /* SignUpViewController.swift */,
-				93FD82F326695EA4004922AC /* HomeViewController.swift */,
-				93FD82FB26695EBD004922AC /* SearchViewController.swift */,
+				93D20685267990BF00EA8532 /* Onboarding */,
+				93D20686267990DE00EA8532 /* SignIn */,
+				93D20687267990F000EA8532 /* SignUp */,
+				93D20688267990FC00EA8532 /* Home */,
+				93D206892679910600EA8532 /* Search */,
+				93D2068A2679913800EA8532 /* Favorites */,
+				93D2068B2679913E00EA8532 /* Profile */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -541,7 +603,9 @@
 				93718AF22661CD6B00FD50BB /* AppDelegate.swift in Sources */,
 				93FD82D026687DB8004922AC /* TitleLabel.swift in Sources */,
 				93FD82F426695EA4004922AC /* HomeViewController.swift in Sources */,
+				93D2068F2679918B00EA8532 /* ProfileViewController.swift in Sources */,
 				93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */,
+				93D2068D2679916700EA8532 /* FavoritesViewController.swift in Sources */,
 				9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */,
 				93FD83352669AA62004922AC /* UIView+Ext.swift in Sources */,
 				93FD82EE26695E34004922AC /* AppTabBarController.swift in Sources */,

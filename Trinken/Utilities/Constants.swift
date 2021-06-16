@@ -10,8 +10,8 @@ import UIKit
 enum SFSymbols {
     static let HOME = UIImage(systemName: "house")!
     static let SEARCH = UIImage(systemName: "magnifyingglass")!
-    static let FAVORITES = UIImage(systemName: "star")!
-    static let CONFIGURATION = UIImage(systemName: "gear")!
+    static let STAR = UIImage(systemName: "star")!
+    static let GEAR = UIImage(systemName: "gear")!
     
     static let MAIL = UIImage(systemName: "envelope")!
     static let LOCK = UIImage(systemName: "lock")!

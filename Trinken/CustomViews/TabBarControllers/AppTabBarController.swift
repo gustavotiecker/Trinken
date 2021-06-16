@@ -33,7 +33,10 @@ class AppTabBarController: UITabBarController {
     
     private func configureTabBar() {
         UITabBar.appearance().tintColor = UIColor(named: "background-color")
-        viewControllers = [createHomeNavigationController(), createSearchNavigationController()]
+        viewControllers = [createHomeNavigationController(),
+                           createSearchNavigationController(),
+                           createFavoritesNavigationController(),
+                           createProfileNavigationController()]
     }
     
     private func createHomeNavigationController() -> UINavigationController {
@@ -47,8 +50,24 @@ class AppTabBarController: UITabBarController {
     private func createSearchNavigationController() -> UINavigationController {
         let searchViewController = SearchViewController()
         searchViewController.title = "Search"
-        searchViewController.tabBarItem = UITabBarItem(title: "", image: SFSymbols.SEARCH, tag: 0)
+        searchViewController.tabBarItem = UITabBarItem(title: "", image: SFSymbols.SEARCH, tag: 1)
         
         return UINavigationController(rootViewController: searchViewController)
+    }
+    
+    private func createFavoritesNavigationController() -> UINavigationController {
+        let favoritesNavigationController = FavoritesViewController()
+        favoritesNavigationController.title = "Favorites"
+        favoritesNavigationController.tabBarItem = UITabBarItem(title: "", image: SFSymbols.STAR, tag: 2)
+        
+        return UINavigationController(rootViewController: favoritesNavigationController)
+    }
+    
+    private func createProfileNavigationController() -> UINavigationController {
+        let profileNavigationController = ProfileViewController()
+        profileNavigationController.title = "Profile"
+        profileNavigationController.tabBarItem = UITabBarItem(title: "", image: SFSymbols.USER, tag: 3)
+        
+        return UINavigationController(rootViewController: profileNavigationController)
     }
 }

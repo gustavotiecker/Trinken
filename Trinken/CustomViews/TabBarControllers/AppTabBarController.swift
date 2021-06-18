@@ -12,6 +12,7 @@ class AppTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = Colors.BACKGROUND_COLOR
+        UITabBar.appearance().tintColor = Colors.PRIMARY_TINT_COLOR
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +33,6 @@ class AppTabBarController: UITabBarController {
     }
     
     private func configureTabBar() {
-        UITabBar.appearance().tintColor = UIColor(named: "background-color")
         viewControllers = [createHomeNavigationController(),
                            createSearchNavigationController(),
                            createFavoritesNavigationController(),

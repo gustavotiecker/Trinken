@@ -16,6 +16,7 @@ enum SFSymbols {
     static let MAIL = UIImage(systemName: "envelope")!
     static let LOCK = UIImage(systemName: "lock")!
     static let USER = UIImage(systemName: "person")!
+    static let USER_CIRCLE_FILL = UIImage(systemName: "person.circle.fill")!
 }
 
 enum Images {
@@ -27,4 +28,5 @@ enum Colors {
     static let BACKGROUND_COLOR = UIColor(named: "background-color")!
     static let PRIMARY_COLOR = UIColor(named: "primary-color")!
     static let MAIN_TEXT_COLOR = UIColor(named: "main-text-color")!
+    static let PRIMARY_TINT_COLOR = UIColor(named: "primary-tint-color")!
 }

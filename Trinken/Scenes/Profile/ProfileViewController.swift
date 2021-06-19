@@ -15,6 +15,7 @@ class ProfileViewController: UIViewController {
     private let nameLabel = TitleLabel(textAlignment: .left, fontSize: 24)
     
     private let optionsTableView = UITableView()
+    private let options = ["Terms and coditions", "Feedback", "About"]
     private let profileView = UIView()
     
     private let editProfileButton: UIButton = {
@@ -36,6 +37,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
         configureImagePicker()
+        configureTableView()
         layoutProfileView()
         layoutUI()
     }
@@ -51,15 +53,24 @@ class ProfileViewController: UIViewController {
         imagePicker.allowsEditing = true
     }
     
+    private func configureTableView() {
+        optionsTableView.backgroundColor = Colors.BACKGROUND_COLOR
+        optionsTableView.rowHeight = 50
+        optionsTableView.tableFooterView = UIView(frame: .zero)
+        optionsTableView.delegate = self
+        optionsTableView.dataSource = self
+        optionsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+    }
+    
     private func layoutProfileView() {
         nameLabel.text = "User"
         
-        let stackView = UIStackView(arrangedSubviews: [nameLabel, editProfileButton])
+        let stackView = UIStackView(arrangedSubviews: [nameLabel, editProfileButton, optionsTableView])
         stackView.axis = .vertical
         stackView.distribution = .equalSpacing
         stackView.alignment = .leading
         
-        profileView.addSubviews(profileImageView, stackView)
+        profileView.addSubviews(profileImageView, stackView, optionsTableView)
         
         for view in [profileImageView, editProfileButton, stackView] {
             view.translatesAutoresizingMaskIntoConstraints = false
@@ -72,7 +83,12 @@ class ProfileViewController: UIViewController {
             profileImageView.widthAnchor.constraint(equalToConstant: 60),
             
             stackView.centerYAnchor.constraint(equalTo: profileView.centerYAnchor),
-            stackView.leadingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: 20)
+            stackView.leadingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: 20),
+            
+            optionsTableView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
+            optionsTableView.leadingAnchor.constraint(equalTo: profileView.leadingAnchor),
+            optionsTableView.trailingAnchor.constraint(equalTo: profileView.trailingAnchor),
+            optionsTableView.heightAnchor.constraint(equalToConstant: 300)
         ])
     }
     
@@ -94,5 +110,22 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         guard let profileImage = info[.editedImage] as? UIImage else { return }
         
         self.profileImage = profileImage
+    }
+}
+
+extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
+        cell.backgroundColor = Colors.BACKGROUND_COLOR
+        cell.textLabel?.text = options[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(options[indexPath.row])
     }
 }

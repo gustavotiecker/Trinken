@@ -30,21 +30,23 @@ class MenuOptionCell: UITableViewCell {
 
     private func configure() {
         addSubviews(iconImageView, label)
+        iconImageView.translatesAutoresizingMaskIntoConstraints = false
         
-        accessoryType = .disclosureIndicator
+        accessoryType = .none
         selectionStyle = .none
+        iconImageView.tintColor = Colors.MAIN_TEXT_COLOR
         let padding: CGFloat = 12
         
         NSLayoutConstraint.activate([
             iconImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            iconImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
+            iconImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             iconImageView.heightAnchor.constraint(equalToConstant: 30),
             iconImageView.widthAnchor.constraint(equalToConstant: 30),
             
             label.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            label.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: padding * 2),
+            label.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: padding),
             label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
-            label.heightAnchor.constraint(equalToConstant: 40)
+            label.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
 }

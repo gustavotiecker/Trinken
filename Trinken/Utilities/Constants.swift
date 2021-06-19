@@ -17,6 +17,10 @@ enum SFSymbols {
     static let LOCK = UIImage(systemName: "lock")!
     static let USER = UIImage(systemName: "person")!
     static let USER_CIRCLE_FILL = UIImage(systemName: "person.circle.fill")!
+    
+    static let TERMS = UIImage(systemName: "newspaper.fill")!
+    static let FEEDBACK = UIImage(systemName: "text.bubble.fill")!
+    static let ABOUT = UIImage(systemName: "questionmark.circle.fill")!
 }
 
 enum Images {

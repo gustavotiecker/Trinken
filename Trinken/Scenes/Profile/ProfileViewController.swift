@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController {
     
     private let optionsTableView = UITableView()
     private let options = ["Terms and coditions", "Feedback", "About"]
+    private let iconOptions = [SFSymbols.TERMS, SFSymbols.FEEDBACK, SFSymbols.ABOUT]
     private let profileView = UIView()
     
     private let editProfileButton: UIButton = {
@@ -54,23 +55,22 @@ class ProfileViewController: UIViewController {
     }
     
     private func configureTableView() {
-        optionsTableView.backgroundColor = Colors.BACKGROUND_COLOR
-        optionsTableView.rowHeight = 50
-        optionsTableView.tableFooterView = UIView(frame: .zero)
+        optionsTableView.rowHeight = 75
+        optionsTableView.separatorStyle = .none
         optionsTableView.delegate = self
         optionsTableView.dataSource = self
-        optionsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        optionsTableView.register(MenuOptionCell.self, forCellReuseIdentifier: MenuOptionCell.reuseID)
     }
     
     private func layoutProfileView() {
         nameLabel.text = "User"
         
-        let stackView = UIStackView(arrangedSubviews: [nameLabel, editProfileButton, optionsTableView])
+        let stackView = UIStackView(arrangedSubviews: [nameLabel, editProfileButton])
         stackView.axis = .vertical
         stackView.distribution = .equalSpacing
         stackView.alignment = .leading
         
-        profileView.addSubviews(profileImageView, stackView, optionsTableView)
+        profileView.addSubviews(profileImageView, stackView)
         
         for view in [profileImageView, editProfileButton, stackView] {
             view.translatesAutoresizingMaskIntoConstraints = false
@@ -83,24 +83,25 @@ class ProfileViewController: UIViewController {
             profileImageView.widthAnchor.constraint(equalToConstant: 60),
             
             stackView.centerYAnchor.constraint(equalTo: profileView.centerYAnchor),
-            stackView.leadingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: 20),
-            
-            optionsTableView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
-            optionsTableView.leadingAnchor.constraint(equalTo: profileView.leadingAnchor),
-            optionsTableView.trailingAnchor.constraint(equalTo: profileView.trailingAnchor),
-            optionsTableView.heightAnchor.constraint(equalToConstant: 300)
+            stackView.leadingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: 20)
         ])
     }
     
     private func layoutUI() {
-        view.addSubviews(profileView)
+        view.addSubviews(profileView, optionsTableView)
         profileView.translatesAutoresizingMaskIntoConstraints = false
+        optionsTableView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             profileView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             profileView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             profileView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            profileView.heightAnchor.constraint(equalToConstant: 100)
+            profileView.heightAnchor.constraint(equalToConstant: 100),
+            
+            optionsTableView.topAnchor.constraint(equalTo: profileView.bottomAnchor, constant: 10),
+            optionsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            optionsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            optionsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }
@@ -119,9 +120,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
-        cell.backgroundColor = Colors.BACKGROUND_COLOR
-        cell.textLabel?.text = options[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: MenuOptionCell.reuseID) as! MenuOptionCell
+        cell.set(icon: iconOptions[indexPath.row], text: options[indexPath.row])
         return cell
     }
     

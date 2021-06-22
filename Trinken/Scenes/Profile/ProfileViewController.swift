@@ -60,6 +60,7 @@ class ProfileViewController: UIViewController {
     
     private func configureTableView() {
         optionsTableView.rowHeight = 75
+        optionsTableView.removeExcessCells()
         optionsTableView.delegate = self
         optionsTableView.dataSource = self
         optionsTableView.register(MenuOptionCell.self, forCellReuseIdentifier: MenuOptionCell.reuseID)

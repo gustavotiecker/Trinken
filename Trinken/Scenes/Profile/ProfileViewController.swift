@@ -15,8 +15,7 @@ class ProfileViewController: UIViewController {
     private let nameLabel = TitleLabel(textAlignment: .left, fontSize: 24)
     
     private let optionsTableView = UITableView()
-    private let options = ["Terms and coditions", "Feedback", "About"]
-    private let iconOptions = [SFSymbols.TERMS, SFSymbols.FEEDBACK, SFSymbols.ABOUT]
+    private var menuOptions: [MenuOptions]?
     private let profileView = UIView()
     
     private let editProfileButton: UIButton = {
@@ -37,6 +36,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
+        setMenuOptions()
         configureImagePicker()
         configureTableView()
         layoutProfileView()
@@ -49,6 +49,10 @@ class ProfileViewController: UIViewController {
     }
     
     // MARK: - Methods
+    private func setMenuOptions() {
+        menuOptions = [.termsAndConditions, .feedback, .about]
+    }
+    
     private func configureImagePicker() {
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
@@ -56,7 +60,6 @@ class ProfileViewController: UIViewController {
     
     private func configureTableView() {
         optionsTableView.rowHeight = 75
-        optionsTableView.separatorStyle = .none
         optionsTableView.delegate = self
         optionsTableView.dataSource = self
         optionsTableView.register(MenuOptionCell.self, forCellReuseIdentifier: MenuOptionCell.reuseID)
@@ -116,16 +119,12 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
 
 extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return menuOptions?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MenuOptionCell.reuseID) as! MenuOptionCell
-        cell.set(icon: iconOptions[indexPath.row], text: options[indexPath.row])
+        cell.set(menuOption: menuOptions?[indexPath.row])
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(options[indexPath.row])
     }
 }

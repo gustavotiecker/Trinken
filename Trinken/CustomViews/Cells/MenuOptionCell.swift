@@ -12,7 +12,7 @@ class MenuOptionCell: UITableViewCell {
     static let reuseID = "MenuOptionCell"
     
     let iconImageView = UIImageView()
-    let label = TitleLabel(textAlignment: .left, fontSize: 18)
+    let title = TitleLabel(textAlignment: .left, fontSize: 18)
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -23,13 +23,13 @@ class MenuOptionCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(icon: UIImage, text: String) {
-        iconImageView.image = icon
-        label.text = text
+    func set(menuOption: MenuOptions?) {
+        iconImageView.image = menuOption?.icon
+        title.text = menuOption?.title
     }
 
     private func configure() {
-        addSubviews(iconImageView, label)
+        addSubviews(iconImageView, title)
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
         
         accessoryType = .none
@@ -43,10 +43,10 @@ class MenuOptionCell: UITableViewCell {
             iconImageView.heightAnchor.constraint(equalToConstant: 30),
             iconImageView.widthAnchor.constraint(equalToConstant: 30),
             
-            label.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            label.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: padding),
-            label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
-            label.heightAnchor.constraint(equalToConstant: 30)
+            title.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            title.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: padding),
+            title.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
+            title.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
 }

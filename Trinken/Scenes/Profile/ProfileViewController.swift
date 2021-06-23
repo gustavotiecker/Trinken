@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
     
@@ -66,6 +67,15 @@ class ProfileViewController: UIViewController {
         optionsTableView.register(MenuOptionCell.self, forCellReuseIdentifier: MenuOptionCell.reuseID)
     }
     
+    private func configureProfileImageView() {
+        profileImageView.layer.cornerRadius = 30
+        profileImageView.layer.masksToBounds = true
+        profileImageView.contentMode = .scaleAspectFill
+        profileImageView.clipsToBounds = true
+        profileImageView.layer.borderColor = UIColor.white.cgColor
+        profileImageView.layer.borderWidth = 3
+    }
+    
     private func layoutProfileView() {
         nameLabel.text = "User"
         
@@ -115,6 +125,36 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         guard let profileImage = info[.editedImage] as? UIImage else { return }
         
         self.profileImage = profileImage
+        self.profileImageView.image = profileImage
+        
+        configureProfileImageView()
+        
+        dismiss(animated: true, completion: nil)
+        
+        guard let imageData = self.profileImage?.jpegData(compressionQuality: 0.3) else { return }
+        let imageFileName = NSUUID().uuidString
+        let storageRef = DB.STORAGE_PROFILE_IMAGES_REF.child(imageFileName)
+
+        storageRef.putData(imageData, metadata: nil) { storageMetadata, error in
+            storageRef.downloadURL { url, error in
+                guard let profileImageUrl = url?.absoluteString else { return }
+                
+                guard let uid = Auth.auth().currentUser?.uid else { return }
+                
+                DB.USERS_REF.child(uid).observeSingleEvent(of: .value) { dataSnapshot in
+                    guard let userDictionary = dataSnapshot.value as? [String : AnyObject] else { return }
+                    
+                    var user = User(uid: uid, dictionary: userDictionary)
+                    user.profileImageUrl = profileImageUrl
+                    
+                    let values = ["fullname" : user.fullname,
+                                  "email" : user.email,
+                                  "profileImageUrl" : user.profileImageUrl]
+                    
+                    DB.USERS_REF.child(uid).updateChildValues(values)
+                }
+            }
+        }
     }
 }
 

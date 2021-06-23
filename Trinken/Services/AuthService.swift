@@ -12,6 +12,7 @@ struct AuthCredentials {
     let fullName: String
     let email: String
     let password: String
+    let profileImageUrl: String
 }
 
 struct AuthService {
@@ -34,7 +35,8 @@ struct AuthService {
             guard let uid = result?.user.uid else { return }
             let values = ["fullname" : credentials.fullName,
                           "email" : credentials.email,
-                          "password" : credentials.password]
+                          "password" : credentials.password,
+                          "profileImageUrl" : credentials.profileImageUrl]
             
             DB.USERS_REF.child(uid).updateChildValues(values, withCompletionBlock: completion)
         }

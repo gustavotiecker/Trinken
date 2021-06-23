@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController {
         guard let passwordConfirmation = passwordConfirmationTextField.text else { return }
         
         if password == passwordConfirmation {
-            let userCredentials = AuthCredentials(fullName: fullName, email: email, password: password)
+            let userCredentials = AuthCredentials(fullName: fullName, email: email, password: password, profileImageUrl: "")
             AuthService.shared.registerUser(credentials: userCredentials) { error, dbReference in
                 self.dismiss(animated: true, completion: nil)
             }

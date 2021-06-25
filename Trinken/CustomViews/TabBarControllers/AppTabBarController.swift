@@ -22,6 +22,12 @@ class AppTabBarController: UITabBarController {
     func authenticateUser() {
         if AuthService.shared.hasUserSignedIn {
             configureTabBar()
+            
+            guard let uid = UserService.shared.getCurrentUserUid() else { return }
+            
+            UserService.shared.fetchUser(uid: uid, completion: { user in
+                UserManager.shared.currentUser = user
+            })
         } else {
             DispatchQueue.main.async {
                 let navigationController = UINavigationController(rootViewController: SignInViewController())

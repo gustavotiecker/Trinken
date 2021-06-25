@@ -11,6 +11,8 @@ import Firebase
 class ProfileViewController: UIViewController {
     
     // MARK: - Properties
+    private var user = User()
+    
     private let imagePicker = UIImagePickerController()
     private var profileImage: UIImage?
     private let nameLabel = TitleLabel(textAlignment: .left, fontSize: 24)
@@ -37,6 +39,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
+        user = UserManager.shared.currentUser
         setMenuOptions()
         configureImagePicker()
         configureTableView()
@@ -77,7 +80,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func layoutProfileView() {
-        nameLabel.text = "User"
+        nameLabel.text = user.fullname
         
         let stackView = UIStackView(arrangedSubviews: [nameLabel, editProfileButton])
         stackView.axis = .vertical
@@ -131,29 +134,9 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         
         dismiss(animated: true, completion: nil)
         
-        guard let imageData = self.profileImage?.jpegData(compressionQuality: 0.3) else { return }
-        let imageFileName = NSUUID().uuidString
-        let storageRef = DB.STORAGE_PROFILE_IMAGES_REF.child(imageFileName)
-
-        storageRef.putData(imageData, metadata: nil) { storageMetadata, error in
-            storageRef.downloadURL { url, error in
-                guard let profileImageUrl = url?.absoluteString else { return }
-                
-                guard let uid = Auth.auth().currentUser?.uid else { return }
-                
-                DB.USERS_REF.child(uid).observeSingleEvent(of: .value) { dataSnapshot in
-                    guard let userDictionary = dataSnapshot.value as? [String : AnyObject] else { return }
-                    
-                    var user = User(uid: uid, dictionary: userDictionary)
-                    user.profileImageUrl = profileImageUrl
-                    
-                    let values = ["fullname" : user.fullname,
-                                  "email" : user.email,
-                                  "profileImageUrl" : user.profileImageUrl]
-                    
-                    DB.USERS_REF.child(uid).updateChildValues(values)
-                }
-            }
+        UserService.shared.updateProfileImage(image: profileImage) { profileImageUrl in
+            self.user.profileImageUrl = profileImageUrl
+            UserManager.shared.currentUser = self.user
         }
     }
 }

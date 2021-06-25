@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+import SDWebImage
 
 class ProfileViewController: UIViewController {
     
@@ -81,6 +81,8 @@ class ProfileViewController: UIViewController {
     
     private func layoutProfileView() {
         nameLabel.text = user.fullname
+        profileImageView.sd_setImage(with: user.profileImageUrl)
+        configureProfileImageView()
         
         let stackView = UIStackView(arrangedSubviews: [nameLabel, editProfileButton])
         stackView.axis = .vertical

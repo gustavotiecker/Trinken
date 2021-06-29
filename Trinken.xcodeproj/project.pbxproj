@@ -10,6 +10,7 @@
 		2DFF9E965C08AC1DF69911BB /* Pods_Trinken_TrinkenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351692FFBB4204AC0122A46F /* Pods_Trinken_TrinkenUITests.framework */; };
 		9342B8DF266AF0BA004D7107 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8DE266AF0BA004D7107 /* AttributedButton.swift */; };
 		9342B8E4266AF77F004D7107 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342B8E3266AF77F004D7107 /* SignUpViewController.swift */; };
+		93545D4C268AADDC00637E83 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93545D4B268AADDC00637E83 /* BaseViewController.swift */; };
 		935F39B726783F7C002D288B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 935F39B626783F7C002D288B /* GoogleService-Info.plist */; };
 		936F259126742F26001A3803 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F259026742F26001A3803 /* FirebaseConstants.swift */; };
 		936F25942674330E001A3803 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F25932674330E001A3803 /* AuthService.swift */; };
@@ -67,6 +68,7 @@
 		762AB3CD0E427D1DED6636D4 /* Pods_TrinkenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrinkenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9342B8DE266AF0BA004D7107 /* AttributedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
 		9342B8E3266AF77F004D7107 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		93545D4B268AADDC00637E83 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		935F39B626783F7C002D288B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		936F259026742F26001A3803 /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
 		936F25932674330E001A3803 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -137,6 +139,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93545D49268AADA700637E83 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93545D4A268AADBF00637E83 /* Bases */,
+				93FD82EC26695E01004922AC /* TabBarControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93545D4A268AADBF00637E83 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				93545D4B268AADDC00637E83 /* BaseViewController.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
 		936F259226743300001A3803 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +190,7 @@
 		93718AF02661CD6B00FD50BB /* Trinken */ = {
 			isa = PBXGroup;
 			children = (
+				93545D49268AADA700637E83 /* Controllers */,
 				937DF3922683C60F0014B25D /* Managers */,
 				93ADB7592682C9B20046FED3 /* Model */,
 				936F259226743300001A3803 /* Services */,
@@ -289,7 +309,6 @@
 			children = (
 				939BC9B7267D948900476723 /* Cells */,
 				93FD830E2669A7B4004922AC /* TextFields */,
-				93FD82EC26695E01004922AC /* TabBarControllers */,
 				93FD82CE26687D97004922AC /* Labels */,
 				93FD82C1266714A0004922AC /* Buttons */,
 			);
@@ -649,6 +668,7 @@
 				93FD82D026687DB8004922AC /* TitleLabel.swift in Sources */,
 				93FD82F426695EA4004922AC /* HomeViewController.swift in Sources */,
 				93A8F50926817CE800A14E4F /* UITableView+Ext.swift in Sources */,
+				93545D4C268AADDC00637E83 /* BaseViewController.swift in Sources */,
 				93D2068F2679918B00EA8532 /* ProfileViewController.swift in Sources */,
 				93FD82C3266714B9004922AC /* PrimaryButton.swift in Sources */,
 				93D2068D2679916700EA8532 /* FavoritesViewController.swift in Sources */,

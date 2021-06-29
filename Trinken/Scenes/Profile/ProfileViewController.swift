@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: BaseViewController {
     
     // MARK: - Properties
     private var user = User()
@@ -41,8 +41,11 @@ class ProfileViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         user = UserManager.shared.currentUser
         setMenuOptions()
+        
         configureImagePicker()
         configureTableView()
+        configureProfileView()
+        
         layoutProfileView()
         layoutUI()
     }
@@ -79,11 +82,13 @@ class ProfileViewController: UIViewController {
         profileImageView.layer.borderWidth = 3
     }
     
-    private func layoutProfileView() {
+    private func configureProfileView() {
         nameLabel.text = user.fullname
         profileImageView.sd_setImage(with: user.profileImageUrl)
         configureProfileImageView()
-        
+    }
+    
+    private func layoutProfileView() {
         let stackView = UIStackView(arrangedSubviews: [nameLabel, editProfileButton])
         stackView.axis = .vertical
         stackView.distribution = .equalSpacing
@@ -136,9 +141,11 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         
         dismiss(animated: true, completion: nil)
         
+        showLoader()
         UserService.shared.updateProfileImage(image: profileImage) { profileImageUrl in
             self.user.profileImageUrl = profileImageUrl
             UserManager.shared.currentUser = self.user
+            self.hideLocader()
         }
     }
 }

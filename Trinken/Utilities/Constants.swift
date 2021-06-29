@@ -21,6 +21,7 @@ enum SFSymbols {
     static let TERMS = UIImage(systemName: "newspaper.fill")!
     static let FEEDBACK = UIImage(systemName: "text.bubble.fill")!
     static let ABOUT = UIImage(systemName: "questionmark.circle.fill")!
+    static let SIGN_OUT = UIImage(systemName: "arrow.backward.square.fill")!
 }
 
 enum Images {

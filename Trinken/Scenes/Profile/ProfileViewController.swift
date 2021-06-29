@@ -57,7 +57,7 @@ class ProfileViewController: BaseViewController {
     
     // MARK: - Methods
     private func setMenuOptions() {
-        menuOptions = [.termsAndConditions, .feedback, .about]
+        menuOptions = [.termsAndConditions, .feedback, .about, .signOut]
     }
     
     private func configureImagePicker() {

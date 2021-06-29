@@ -12,6 +12,7 @@ enum MenuOptions {
     case termsAndConditions
     case feedback
     case about
+    case signOut
     
     var title: String {
         switch self {
@@ -20,7 +21,9 @@ enum MenuOptions {
         case .feedback:
             return "Feedback"
         case .about:
-            return "about"
+            return "About"
+        case .signOut:
+            return "Sign Out"
         }
     }
         
@@ -32,6 +35,8 @@ enum MenuOptions {
             return SFSymbols.FEEDBACK
         case .about:
             return SFSymbols.ABOUT
+        case .signOut:
+            return SFSymbols.SIGN_OUT
         }
     }
 }

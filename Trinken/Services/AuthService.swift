@@ -45,4 +45,14 @@ struct AuthService {
     func signUserIn(withEmail email: String, password: String, completion: AuthDataResultCallback?) {
         Auth.auth().signIn(withEmail: email, password: password, completion: completion)
     }
+    
+    func signUserOut() -> Bool {
+        do {
+            try Auth.auth().signOut()
+            UserManager.shared.currentUser = User()
+            return true
+        } catch {
+            return false
+        }
+    }
 }

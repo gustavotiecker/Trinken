@@ -160,4 +160,26 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         cell.set(menuOption: menuOptions?[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch menuOptions?[indexPath.row] {
+        case .termsAndConditions:
+            print("Terms And Conditions")
+        case .feedback:
+            print("Feedback")
+        case .about:
+            print("About")
+        case .signOut:
+            if AuthService.shared.signUserOut() {
+                DispatchQueue.main.async {
+                    let navigationController = UINavigationController(rootViewController: SignInViewController())
+                    navigationController.modalPresentationStyle = .fullScreen
+                    navigationController.isNavigationBarHidden = true
+                    self.present(navigationController, animated: true, completion: nil)
+                }
+            }
+        case .none:
+            break
+        }
+    }
 }

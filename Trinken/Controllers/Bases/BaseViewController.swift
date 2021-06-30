@@ -9,7 +9,7 @@ import UIKit
 
 protocol BaseViewControllerDelegate {
     func showLoader()
-    func hideLocader()
+    func hideLoader()
     func showMessage(_ message: String)
 }
 
@@ -41,7 +41,7 @@ class BaseViewController: UIViewController, BaseViewControllerDelegate {
         view.addSubview(greyView)
     }
     
-    @objc func hideLocader() {
+    @objc func hideLoader() {
         activityIndicator.stopAnimating()
         greyView.removeFromSuperview()
     }

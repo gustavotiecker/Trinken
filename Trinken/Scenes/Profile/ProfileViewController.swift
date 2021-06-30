@@ -145,7 +145,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         UserService.shared.updateProfileImage(image: profileImage) { profileImageUrl in
             self.user.profileImageUrl = profileImageUrl
             UserManager.shared.currentUser = self.user
-            self.hideLocader()
+            self.hideLoader()
         }
     }
 }

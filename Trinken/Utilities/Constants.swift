@@ -32,6 +32,7 @@ enum Colors {
     static let OPENING_BRACKGROUND_COLOR = UIColor(named: "opening-background-color")!
     static let BACKGROUND_COLOR = UIColor(named: "background-color")!
     static let PRIMARY_COLOR = UIColor(named: "primary-color")!
+    static let SECONDARY_COLOR = UIColor(named: "secondary-color")!
     static let MAIN_TEXT_COLOR = UIColor(named: "main-text-color")!
     static let PRIMARY_TINT_COLOR = UIColor(named: "primary-tint-color")!
 }
